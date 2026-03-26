@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg:           #F2EAD3;
+  --bg-light:     #FAF7F0;
+  --bg-note:      #E8DFC4;
+  --text:         #5C4A1E;
+  --text-muted:   #9C8564;
+  --text-dark:    #3A2E1A;
+  --text-deep:    #4A3C1C;
+  --border:       #C9B89A;
+  --border-light: #E8DFC4;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  outline: none;
+  background: transparent;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--text-muted);
+}
+
+.note-card textarea::placeholder,
+.note-card input::placeholder {
+  color: var(--text-deep);
+}
